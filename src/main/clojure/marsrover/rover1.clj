@@ -41,7 +41,9 @@
 
 (def rover (create-rover 0 0 :N))
 
+;; The following move sequence should result in the rover at (1,1) position and facing north
 (def move-sequence1 (-> rover turn-left move turn-right move))
 
+;; The following move sequence should result in the rover at (0,1) position and facing east
 (def move-sequence2 (-> rover turn-left move turn-right move turn-right move))
 
